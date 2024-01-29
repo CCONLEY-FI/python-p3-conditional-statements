@@ -52,6 +52,7 @@ pass
 #     return num;
 #   }
 # }
+
 def fizzbuzz(num):
     if num % 3 == 0 and num % 5 == 0:
         return "FizzBuzz"
@@ -61,7 +62,6 @@ def fizzbuzz(num):
         return "Buzz"
     else:
         return num
-
 pass
 
 # function calculator(operation, num1, num2) {
