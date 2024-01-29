@@ -10,7 +10,9 @@
 def admin_login(username, password):
     if username() == "admin" or username() == "ADMIN" and password() == "12345":
         return "Access granted"
-    pass
+    else: 
+        return "Access denied"
+pass
 
 # // function howsTheWeather(temperature) {
 # //   let response;
@@ -77,12 +79,14 @@ pass
 #   }
 # }
 def calculator(operation, num1, num2):
-    switcher = {
-        "+": num1 + num2,
-        "-": num1 - num2,
-        "*": num1 * num2,
-        "/": num1 / num2
-    }
-    return switcher.get(operation, "Invalid operation!")
-
+    if operation == "+":
+        return num1 + num2
+    elif operation == "-":
+        return num1 - num2
+    elif operation == "*":
+        return num1 * num2
+    elif operation == "/":
+        return num1 / num2
+    else:
+        print("Invalid operation!")
 pass
